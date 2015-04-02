@@ -1,28 +1,54 @@
-/**********************************************************
-				Authentication Styles
-**********************************************************/
-#account-creation_form .id_state,
-#account-creation_form .dni,
-#account-creation_form .postcode {
-  display: none; }
+/*
+Error: File to import not found or unreadable: compass.
+       Load path: /Applications/MAMP/htdocs/prestashop/themes/default-bootstrap
+        on line 1 of sass/authentication.scss
 
-#create-account_form {
-  min-height: 297px; }
-  #create-account_form p {
-    margin-bottom: 8px; }
-  #create-account_form .form-group {
-    margin: 0 0 20px 0; }
+1: @import "compass";
+2: @import "theme_variables";
+3: /**********************************************************
+4: 				Authentication Styles
+5: **********************************************************\/
+6: #account-creation_form .id_state,
 
-#login_form {
-  min-height: 297px; }
-  #login_form .form-group {
-    margin: 0 0 3px 0; }
-    #login_form .form-group.lost_password {
-      margin: 14px 0 15px 0; }
-      #login_form .form-group.lost_password a {
-        text-decoration: underline; }
-        #login_form .form-group.lost_password a:hover {
-          text-decoration: none; }
-
-#login_form .form-control, #create-account_form .form-control {
-  max-width: 271px; }
+Backtrace:
+sass/authentication.scss:1
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:45:in `import'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/bin/sass:13:in `<top (required)>'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/sass:23:in `load'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/sass:23:in `<main>'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A        Load path: /Applications/MAMP/htdocs/prestashop/themes/default-bootstrap\A         on line 1 of sass/authentication.scss\A \A 1: @import \"compass\";\A 2: @import \"theme_variables\";\A 3: /**********************************************************\A 4: 				Authentication Styles\A 5: **********************************************************/\A 6: #account-creation_form .id_state,"; }
