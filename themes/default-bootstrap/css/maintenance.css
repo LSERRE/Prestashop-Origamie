@@ -1,54 +1,46 @@
-/*
-Error: File to import not found or unreadable: compass.
-       Load path: /Applications/MAMP/htdocs/prestashop/themes/default-bootstrap
-        on line 1 of sass/maintenance.scss
+/*********************************************************************
+					Maintenance Page Styles
+**********************************************************************/
+#maintenance {
+  margin: 50px 0 0 0; }
+  @media (min-width: 1200px) {
+    #maintenance {
+      margin: 126px 0 0 0;
+      padding: 91px 48px 365px 297px;
+      background: url(../img/bg_maintenance.png) no-repeat; } }
+  #maintenance .logo {
+    margin: 0 0 31px 0; }
+  #maintenance h1 {
+    font: 600 28px/34px "Open Sans", sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d6d4d4;
+    padding: 0 0 14px 0;
+    margin: 0 0 19px 0; }
+  #maintenance #message {
+    font: 600 16px/31px "Open Sans", sans-serif;
+    padding: 0 0 0 18px;
+    color: #555454;
+    text-transform: uppercase; }
 
-1: @import "compass";
-2: @import "theme_variables";
-3: /*********************************************************************
-4: 					Maintenance Page Styles
-5: **********************************************************************\/
-6: #maintenance {
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 
-Backtrace:
-sass/maintenance.scss:1
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:45:in `import'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:407:in `run'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/bin/sass:13:in `<top (required)>'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/sass:23:in `load'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/sass:23:in `<main>'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `eval'
-/Users/louisserre/.rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A        Load path: /Applications/MAMP/htdocs/prestashop/themes/default-bootstrap\A         on line 1 of sass/maintenance.scss\A \A 1: @import \"compass\";\A 2: @import \"theme_variables\";\A 3: /*********************************************************************\A 4: 					Maintenance Page Styles\A 5: **********************************************************************/\A 6: #maintenance {"; }
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/*# sourceMappingURL=maintenance.css.map */

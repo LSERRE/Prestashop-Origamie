@@ -23,6 +23,9 @@ tools/smarty*/compile/*.php
 
 themes/default/cache/*.js
 themes/default/cache/*.css
+themes/default-bootstrap/cache/*.css
+themes/default-bootstrap/.sass-cache
+themes/default-bootstrap/css/*.css
 
 # Ignore files on root directory
 robots.txt
