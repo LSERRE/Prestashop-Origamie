@@ -1,11 +1,9 @@
 @import "compass";
 @import "theme_variables";
 .header_user_info {
-	float: right;
-	border-left: 1px solid #515151;
-	border-right: 1px solid #515151;
+	float: left;
 	a {
-		color: $light-text-color;
+		color: #000;
 		font-weight: bold;
 		display: block;
 		padding: 8px 9px 11px 8px;

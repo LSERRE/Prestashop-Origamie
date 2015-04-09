@@ -1,9 +1,7 @@
 .header_user_info {
-  float: right;
-  border-left: 1px solid #515151;
-  border-right: 1px solid #515151; }
+  float: left; }
   .header_user_info a {
-    color: #fff;
+    color: #000;
     font-weight: bold;
     display: block;
     padding: 8px 9px 11px 8px;

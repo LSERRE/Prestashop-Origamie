@@ -586,7 +586,6 @@ pre {
 .col-sm-2,
 .col-sm-3,
 .col-sm-4,
-header .row #header_logo,
 .col-sm-5,
 .col-sm-6,
 .col-sm-7,
@@ -681,7 +680,6 @@ header .row #header_logo,
   .col-sm-2,
   .col-sm-3,
   .col-sm-4,
-  header .row #header_logo,
   .col-sm-5,
   .col-sm-6,
   .col-sm-7,
@@ -700,7 +698,7 @@ header .row #header_logo,
   .col-sm-3 {
     width: 25%; }
 
-  .col-sm-4, header .row #header_logo {
+  .col-sm-4 {
     width: 33.33333%; }
 
   .col-sm-5 {
@@ -5461,7 +5459,6 @@ a:hover {
     padding-left: 0;
     padding-right: 0; } }
 body {
-  display: none;
   min-width: 320px;
   height: 100%;
   line-height: 18px;
@@ -5509,7 +5506,8 @@ header {
     header .row > .container {
       position: relative; }
     header .row #header_logo {
-      padding-top: 15px; }
+      width: 200px;
+      margin: 20px auto 0; }
       @media (max-width: 992px) {
         header .row #header_logo {
           padding-top: 40px; } }
@@ -5519,11 +5517,14 @@ header {
           header .row #header_logo img {
             margin: 0 auto; } }
   @media (min-width: 767px) {
-    header .col-sm-4 + .col-sm-4 + .col-sm-4, header .row #header_logo + .col-sm-4 + .col-sm-4, header .row .col-sm-4 + #header_logo + .col-sm-4, header .row #header_logo + #header_logo + .col-sm-4, header .row .col-sm-4 + .col-sm-4 + #header_logo, header .row #header_logo + .col-sm-4 + #header_logo, header .row .col-sm-4 + #header_logo + #header_logo, header .row #header_logo + #header_logo + #header_logo {
+    header .col-sm-4 + .col-sm-4 + .col-sm-4 {
       float: right; } }
 
 .ie8 #header #header_logo {
   width: 350px; }
+
+.menu-container {
+  margin-top: 20px; }
 
 #center_column .page_product_box h3 {
   color: #555454;

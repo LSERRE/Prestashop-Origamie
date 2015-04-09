@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 09 Avril 2015 à 14:35
+-- Généré le: Jeu 09 Avril 2015 à 17:10
 -- Version du serveur: 5.5.33-log
 -- Version de PHP: 5.5.3
 
@@ -2295,7 +2295,7 @@ CREATE TABLE `ps_category` (
 INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
 (1, 0, 1, 0, 1, 18, 1, '2015-03-26 15:41:29', '2015-03-26 15:41:29', 0, 0),
 (2, 1, 1, 1, 2, 17, 1, '2015-03-26 15:41:29', '2015-03-26 15:41:29', 0, 1),
-(12, 2, 1, 2, 3, 14, 1, '2015-03-31 15:39:29', '2015-03-31 15:39:29', 0, 0),
+(12, 2, 1, 2, 3, 14, 1, '2015-03-31 15:39:29', '2015-04-09 14:55:14', 1, 0),
 (13, 2, 1, 2, 15, 16, 1, '2015-03-31 15:39:54', '2015-03-31 15:39:54', 0, 0),
 (14, 12, 1, 3, 4, 5, 1, '2015-03-31 15:40:22', '2015-03-31 15:40:22', 0, 0),
 (15, 12, 1, 3, 6, 7, 1, '2015-03-31 15:40:49', '2015-03-31 15:40:49', 0, 0),
@@ -2375,7 +2375,7 @@ CREATE TABLE `ps_category_lang` (
 INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
 (1, 1, 1, 'Racine', '', 'racine', '', '', ''),
 (2, 1, 1, 'Accueil', '', 'accueil', '', '', ''),
-(12, 1, 1, 'Origamis', '', 'origamis', '', '', ''),
+(12, 1, 1, 'Nos produits', '', 'nos-produits', '', '', ''),
 (13, 1, 1, 'Apprentissages', '', 'apprentissages', '', '', ''),
 (14, 1, 1, 'Animaux', '', 'animaux', '', '', ''),
 (15, 1, 1, 'Boîtes', '', 'boites', '', '', ''),
@@ -3922,8 +3922,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (88, NULL, NULL, 'PS_STORES_DISPLAY_CMS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (89, NULL, NULL, 'PS_STORES_DISPLAY_FOOTER', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (90, NULL, NULL, 'PS_STORES_SIMPLIFIED', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(91, NULL, NULL, 'SHOP_LOGO_WIDTH', '350', '0000-00-00 00:00:00', '2015-03-26 15:41:31'),
-(92, NULL, NULL, 'SHOP_LOGO_HEIGHT', '99', '0000-00-00 00:00:00', '2015-03-26 15:41:31'),
+(91, NULL, NULL, 'SHOP_LOGO_WIDTH', '391', '0000-00-00 00:00:00', '2015-04-09 17:04:39'),
+(92, NULL, NULL, 'SHOP_LOGO_HEIGHT', '127', '0000-00-00 00:00:00', '2015-04-09 17:04:39'),
 (93, NULL, NULL, 'EDITORIAL_IMAGE_WIDTH', '530', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (94, NULL, NULL, 'EDITORIAL_IMAGE_HEIGHT', '228', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (95, NULL, NULL, 'PS_STATSDATA_CUSTOMER_PAGESVIEWS', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3948,7 +3948,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (114, NULL, NULL, 'PS_STORES_CENTER_LONG', '-80.226439', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (115, NULL, NULL, 'PS_USE_ECOTAX', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (116, NULL, NULL, 'PS_CANONICAL_REDIRECT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(117, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1428572310', '0000-00-00 00:00:00', '2015-04-09 11:38:30'),
+(117, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1428591879', '0000-00-00 00:00:00', '2015-04-09 17:04:39'),
 (118, NULL, NULL, 'PS_BACKUP_DROP_TABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (119, NULL, NULL, 'PS_OS_CHEQUE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (120, NULL, NULL, 'PS_OS_PAYMENT', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4042,8 +4042,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (208, NULL, NULL, 'BLOCKADVERT_LINK', 'http://www.prestashop.com', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (209, NULL, NULL, 'BLOCKSTORE_IMG', 'store.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (210, NULL, NULL, 'BLOCKADVERT_IMG_EXT', 'jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(211, NULL, NULL, 'MOD_BLOCKTOPMENU_ITEMS', 'CAT3,CAT8,CAT5,LNK1', '0000-00-00 00:00:00', '2015-03-26 15:41:38'),
-(212, NULL, NULL, 'MOD_BLOCKTOPMENU_SEARCH', '0', '0000-00-00 00:00:00', '2015-03-26 15:41:38'),
+(211, NULL, NULL, 'MOD_BLOCKTOPMENU_ITEMS', 'CAT12,CAT13,CMS4', '0000-00-00 00:00:00', '2015-04-09 14:50:15'),
+(212, NULL, NULL, 'MOD_BLOCKTOPMENU_SEARCH', NULL, '0000-00-00 00:00:00', '2015-04-09 14:50:15'),
 (213, NULL, NULL, 'BLOCKSOCIAL_FACEBOOK', 'http://www.facebook.com/prestashop', '0000-00-00 00:00:00', '2015-03-26 15:41:37'),
 (214, NULL, NULL, 'BLOCKSOCIAL_TWITTER', 'http://www.twitter.com/prestashop', '0000-00-00 00:00:00', '2015-03-26 15:41:37'),
 (215, NULL, NULL, 'BLOCKSOCIAL_RSS', 'http://www.prestashop.com/blog/en/', '0000-00-00 00:00:00', '2015-03-26 15:41:37'),
@@ -4071,8 +4071,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (237, NULL, NULL, 'PS_SHOP_EMAIL', 'louis.serre@gmail.com', '0000-00-00 00:00:00', '2015-03-26 15:41:33'),
 (238, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (239, NULL, NULL, 'PS_SHOP_ACTIVITY', '19', '0000-00-00 00:00:00', '2015-03-26 15:41:31'),
-(240, NULL, NULL, 'PS_LOGO', 'logo.jpg', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(241, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(240, NULL, NULL, 'PS_LOGO', 'origaminka-logo-1428591878.jpg', '0000-00-00 00:00:00', '2015-04-09 17:04:39'),
+(241, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '2015-04-09 17:04:39'),
 (242, NULL, NULL, 'PS_STORES_ICON', 'logo_stores.gif', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (243, NULL, NULL, 'PS_ROOT_CATEGORY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (244, NULL, NULL, 'PS_HOME_CATEGORY', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4229,7 +4229,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (395, NULL, NULL, 'PS_ONBOARDING_STEP_4_COMPLETED', '0', '2015-03-26 15:41:43', '2015-03-26 15:41:43'),
 (396, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '269', '2015-03-31 14:33:34', '2015-04-02 15:58:54'),
 (397, NULL, NULL, 'PS_BO_ALLOW_EMPLOYEE_FORM_LANG', '0', '2015-04-02 15:53:54', '2015-04-02 15:53:54'),
-(398, NULL, NULL, 'PS_SHOW_CAT_MODULES_1', 'front_office_features', '2015-04-09 11:55:23', '2015-04-09 11:55:23');
+(398, NULL, NULL, 'PS_SHOW_CAT_MODULES_1', NULL, '2015-04-09 11:55:23', '2015-04-09 14:44:56');
 
 -- --------------------------------------------------------
 
@@ -4267,13 +4267,13 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 (9, NULL, NULL, 'PERCENT_PRODUCT_OUT_OF_STOCK_EXP', '1427821132', '2015-03-31 14:58:52', '2015-03-31 14:58:52'),
 (10, NULL, NULL, 'PERCENT_PRODUCT_OUT_OF_STOCK_EXP', '1427821158', '2015-03-31 14:59:18', '2015-03-31 14:59:18'),
 (11, NULL, NULL, 'PERCENT_PRODUCT_OUT_OF_STOCK_EXP', '1427821199', '2015-03-31 14:59:59', '2015-03-31 14:59:59'),
-(12, NULL, NULL, 'DISABLED_CATEGORIES', '1', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
-(13, NULL, NULL, 'DISABLED_CATEGORIES_EXPIRE', '1427814061', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
-(14, NULL, NULL, 'EMPTY_CATEGORIES', '1', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
-(15, NULL, NULL, 'EMPTY_CATEGORIES_EXPIRE', '1427814061', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
+(12, NULL, NULL, 'DISABLED_CATEGORIES', '0', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
+(13, NULL, NULL, 'DISABLED_CATEGORIES_EXPIRE', '1428591279', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
+(14, NULL, NULL, 'EMPTY_CATEGORIES', '5', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
+(15, NULL, NULL, 'EMPTY_CATEGORIES_EXPIRE', '1428591279', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
 (16, NULL, NULL, 'TOP_CATEGORY', NULL, '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
-(17, NULL, NULL, 'PRODUCTS_PER_CATEGORY', '1', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
-(18, NULL, NULL, 'PRODUCTS_PER_CATEGORY_EXPIRE', '1427810461', '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
+(17, NULL, NULL, 'PRODUCTS_PER_CATEGORY', '0', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
+(18, NULL, NULL, 'PRODUCTS_PER_CATEGORY_EXPIRE', '1428587679', '2015-03-31 15:01:01', '2015-04-09 14:54:39'),
 (19, NULL, NULL, 'TOP_CATEGORY_EXPIRE', NULL, '2015-03-31 15:01:01', '2015-03-31 15:01:01'),
 (20, NULL, NULL, 'PERCENT_PRODUCT_OUT_OF_STOCK_EXP', '1427821302', '2015-03-31 15:01:42', '2015-03-31 15:01:42'),
 (21, NULL, NULL, 'PERCENT_PRODUCT_OUT_OF_STOCK_EXP', '1427821321', '2015-03-31 15:02:01', '2015-03-31 15:02:01'),
@@ -4289,9 +4289,9 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 (31, NULL, NULL, 'UPDATE_MODULES', '23', '2015-04-09 11:55:00', '2015-04-09 14:16:20'),
 (32, NULL, NULL, 'INSTALLED_MODULES', '69', '2015-04-09 11:55:02', '2015-04-09 11:55:02'),
 (33, NULL, NULL, 'DISABLED_MODULES', '0', '2015-04-09 11:55:02', '2015-04-09 11:55:02'),
-(34, NULL, NULL, 'INSTALLED_MODULES_EXPIRE', '1428573422', '2015-04-09 11:55:02', '2015-04-09 11:55:02'),
-(35, NULL, NULL, 'DISABLED_MODULES_EXPIRE', '1428573422', '2015-04-09 11:55:02', '2015-04-09 11:55:02'),
-(36, NULL, NULL, 'UPDATE_MODULES_EXPIRE', '1428573422', '2015-04-09 11:55:02', '2015-04-09 11:55:02');
+(34, NULL, NULL, 'INSTALLED_MODULES_EXPIRE', '1428585982', '2015-04-09 11:55:02', '2015-04-09 15:24:22'),
+(35, NULL, NULL, 'DISABLED_MODULES_EXPIRE', '1428585982', '2015-04-09 11:55:02', '2015-04-09 15:24:22'),
+(36, NULL, NULL, 'UPDATE_MODULES_EXPIRE', '1428585983', '2015-04-09 11:55:02', '2015-04-09 15:24:23');
 
 -- --------------------------------------------------------
 
@@ -4312,8 +4312,8 @@ CREATE TABLE `ps_configuration_kpi_lang` (
 --
 
 INSERT INTO `ps_configuration_kpi_lang` (`id_configuration_kpi`, `id_lang`, `value`, `date_upd`) VALUES
-(16, 1, 'Femmes', '2015-03-31 15:01:01'),
-(19, 1, '1427893261', '2015-03-31 15:01:01');
+(16, 1, 'Origamis', '2015-04-09 14:54:39'),
+(19, 1, '1428670479', '2015-04-09 14:54:39');
 
 -- --------------------------------------------------------
 
@@ -4362,7 +4362,7 @@ CREATE TABLE `ps_connections` (
   KEY `id_guest` (`id_guest`),
   KEY `date_add` (`date_add`),
   KEY `id_page` (`id_page`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `ps_connections`
@@ -4378,7 +4378,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (7, 1, 1, 3, 1, 0, '2015-04-02 16:15:36', ''),
 (8, 1, 1, 3, 1, 0, '2015-04-02 17:17:38', ''),
 (9, 1, 1, 3, 1, 0, '2015-04-09 11:26:48', ''),
-(10, 1, 1, 3, 1, 0, '2015-04-09 14:17:30', '');
+(10, 1, 1, 3, 1, 0, '2015-04-09 14:17:30', ''),
+(11, 1, 1, 3, 1, 0, '2015-04-09 16:40:48', '');
 
 -- --------------------------------------------------------
 
@@ -4412,7 +4413,7 @@ CREATE TABLE `ps_connections_source` (
   KEY `orderby` (`date_add`),
   KEY `http_referer` (`http_referer`),
   KEY `request_uri` (`request_uri`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=93 ;
 
 --
 -- Contenu de la table `ps_connections_source`
@@ -4455,7 +4456,62 @@ INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, 
 (34, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:30:58'),
 (35, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:31:16'),
 (36, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:31:23'),
-(37, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:31:54');
+(37, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:31:54'),
+(38, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/accueil/8-oiseau.html', '', '2015-04-09 14:47:26'),
+(39, 10, 'http://localhost:8888/prestashop/products', 'localhost:8888/prestashop/', '', '2015-04-09 14:48:00'),
+(40, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/accueil/8-oiseau.html', '', '2015-04-09 14:48:05'),
+(41, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:48:29'),
+(42, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:49:34'),
+(43, 10, 'http://localhost:8888/prestashop/accueil/8-oiseau.html', 'localhost:8888/prestashop/', '', '2015-04-09 14:50:22'),
+(44, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-origamis', '', '2015-04-09 14:51:21'),
+(45, 10, 'http://localhost:8888/prestashop/12-origamis', 'localhost:8888/prestashop/', '', '2015-04-09 14:53:01'),
+(46, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/meilleures-ventes', '', '2015-04-09 14:53:23'),
+(47, 10, 'http://localhost:8888/prestashop/meilleures-ventes', 'localhost:8888/prestashop/', '', '2015-04-09 14:53:28'),
+(48, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-origamis', '', '2015-04-09 14:53:39'),
+(49, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 14:55:22'),
+(50, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/14-animaux', '', '2015-04-09 14:57:16'),
+(51, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 15:00:32'),
+(52, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 15:00:42'),
+(53, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 15:02:37'),
+(54, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 15:03:25'),
+(55, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/connexion?back=my-account', '', '2015-04-09 15:03:31'),
+(56, 10, 'http://localhost:8888/prestashop/', 'localhost:8888/prestashop/12-nos-produits', '', '2015-04-09 15:13:02'),
+(57, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:14:08'),
+(58, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:15:22'),
+(59, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:15:27'),
+(60, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:16:35'),
+(61, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:28:41'),
+(62, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:29:08'),
+(63, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:29:30'),
+(64, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:29:49'),
+(65, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:29:54'),
+(66, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:30:45'),
+(67, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:31:42'),
+(68, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:36:52'),
+(69, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:46:13'),
+(70, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:46:27'),
+(71, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:48:55'),
+(72, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:49:18'),
+(73, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:53:35'),
+(74, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:57:38'),
+(75, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 15:59:46'),
+(76, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:16:16'),
+(77, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:21:45'),
+(78, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:25:22'),
+(79, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:28:45'),
+(80, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:29:48'),
+(81, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:31:26'),
+(82, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:32:14'),
+(83, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:32:20'),
+(84, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:32:33'),
+(85, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:38:30'),
+(86, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:38:32'),
+(87, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:38:34'),
+(88, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:38:40'),
+(89, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:40:11'),
+(90, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:40:13'),
+(91, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:40:14'),
+(92, 10, 'http://localhost:8888/prestashop/12-nos-produits', 'localhost:8888/prestashop/', '', '2015-04-09 16:40:17');
 
 -- --------------------------------------------------------
 
@@ -6466,11 +6522,11 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (19, 1, 96, 1),
 (20, 1, 26, 1),
 (20, 1, 30, 1),
-(22, 1, 15, 1),
 (22, 1, 122, 1),
 (25, 1, 123, 1),
 (25, 1, 124, 1),
 (25, 1, 125, 1),
+(27, 1, 15, 1),
 (27, 1, 126, 1),
 (27, 1, 127, 1),
 (27, 1, 128, 1),
@@ -6516,7 +6572,6 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (65, 1, 28, 1),
 (65, 1, 31, 1),
 (65, 1, 41, 1),
-(65, 1, 92, 1),
 (65, 1, 99, 1),
 (66, 1, 34, 1),
 (66, 1, 35, 1),
@@ -6528,7 +6583,6 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (5, 1, 15, 2),
 (6, 1, 26, 2),
 (7, 1, 8, 2),
-(8, 1, 100, 2),
 (9, 1, 9, 2),
 (11, 1, 66, 2),
 (11, 1, 67, 2),
@@ -6576,15 +6630,14 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (4, 1, 95, 3),
 (4, 1, 96, 3),
 (7, 1, 26, 3),
-(10, 1, 100, 3),
 (11, 1, 8, 3),
 (13, 1, 9, 3),
+(22, 1, 15, 3),
 (23, 1, 13, 3),
 (23, 1, 14, 3),
 (23, 1, 17, 3),
 (23, 1, 95, 3),
 (23, 1, 96, 3),
-(27, 1, 15, 3),
 (27, 1, 67, 3),
 (33, 1, 132, 3),
 (33, 1, 138, 3),
@@ -6598,7 +6651,6 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (5, 1, 10, 4),
 (12, 1, 8, 4),
 (12, 1, 26, 4),
-(14, 1, 100, 4),
 (26, 1, 13, 4),
 (26, 1, 14, 4),
 (26, 1, 17, 4),
@@ -7389,7 +7441,7 @@ CREATE TABLE `ps_log` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id_log`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
 
 --
 -- Contenu de la table `ps_log`
@@ -7439,7 +7491,8 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (41, 1, 0, 'modification Product', 'Product', 9, 1, '2015-04-02 15:49:57', '2015-04-02 15:49:57'),
 (42, 1, 0, 'Création : Employee', 'Employee', 2, 1, '2015-04-02 15:51:06', '2015-04-02 15:51:06'),
 (43, 1, 0, 'Création : Employee', 'Employee', 3, 1, '2015-04-02 15:58:53', '2015-04-02 15:58:53'),
-(44, 1, 0, 'Création : Employee', 'Employee', 4, 1, '2015-04-02 16:01:08', '2015-04-02 16:01:08');
+(44, 1, 0, 'Création : Employee', 'Employee', 4, 1, '2015-04-02 16:01:08', '2015-04-02 16:01:08'),
+(45, 1, 0, 'modification Category', 'Category', 12, 1, '2015-04-09 14:55:14', '2015-04-09 14:55:14');
 
 -- --------------------------------------------------------
 
@@ -9073,7 +9126,7 @@ CREATE TABLE `ps_pagenotfound` (
   `date_add` datetime NOT NULL,
   PRIMARY KEY (`id_pagenotfound`),
   KEY `date_add` (`date_add`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Contenu de la table `ps_pagenotfound`
@@ -9087,7 +9140,8 @@ INSERT INTO `ps_pagenotfound` (`id_pagenotfound`, `id_shop`, `id_shop_group`, `r
 (5, 1, 1, '/prestashop/admin', '', '2015-04-02 15:32:41'),
 (6, 1, 1, '/prestashop/admin', '', '2015-04-02 15:32:43'),
 (7, 1, 1, '/prestashop/admin', '', '2015-04-02 15:34:04'),
-(8, 1, 1, '/prestashop/administration', '', '2015-04-09 11:33:44');
+(8, 1, 1, '/prestashop/administration', '', '2015-04-09 11:33:44'),
+(9, 1, 1, '/prestashop/products', '', '2015-04-09 14:47:57');
 
 -- --------------------------------------------------------
 
