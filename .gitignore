@@ -32,3 +32,5 @@ robots.txt
 sitemap.xml
 
 themes/default-bootstrap/node_modules
+.idea
+.DS_Store
