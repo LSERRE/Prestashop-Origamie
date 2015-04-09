@@ -10,7 +10,7 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
-#Domain: localhost:8888
+#Domain: localhost
 RewriteRule . - [E=REWRITEBASE:/prestashop/]
 RewriteRule ^api$ api/ [L]
 
