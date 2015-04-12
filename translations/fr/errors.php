@@ -455,6 +455,7 @@ $_ERRORS['c4d82e8095bb903683e0b0e73887aef0'] = 'Veuillez renseigner une quantit�
 $_ERRORS['8a5f368eac3aab699cf8e6e1ec28b695'] = 'Veuillez renseigner un montant pour procéder au remboursement.';
 $_ERRORS['598db0342f11f89d4268942b9491c455'] = 'Impossible de générer un remboursement partiel';
 $_ERRORS['b1db8cec4ec0de83c3934a22bc758a3b'] = 'Impossible de générer un bon de réduction';
+$_ERRORS['4a852562afc74ae4a647fd18ce80856e'] = 'Veuillez renseigner une quantité pour pouvoir créer un avoir de remboursement partiel.';
 $_ERRORS['b42d6c04c76ad834e682c5779c924112'] = 'Vous devez saisir un montant si vous voulez créer un remboursement partiel.';
 $_ERRORS['bd4457c0f19f796f3d66726f9fadc041'] = 'Les données de remboursement partiel ne sont pas correctes';
 $_ERRORS['991bbcc5660531bc1a1c8f1c235794c0'] = 'Vous devez sélectionner un produit';

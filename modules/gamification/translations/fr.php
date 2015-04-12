@@ -19,13 +19,13 @@ $_MODULE['<{gamification}prestashop>gamification_3d4aafb2eedeba2fbf92e852f0af745
 $_MODULE['<{gamification}prestashop>gamification_bacc1bf300527bad9c6ac2d3b875a8d8'] = 'Devenez un marchand accompli à pas de géant !';
 $_MODULE['<{gamification}prestashop>filters_bt_e659b52eba1f0299b2d8ca3483919e72'] = 'Type :';
 $_MODULE['<{gamification}prestashop>filters_bt_b1c94ca2fbc3e78fc30069c8d0f01680'] = 'Toutes';
-$_MODULE['<{gamification}prestashop>filters_bt_18325105de95083e4a1d10b78f29c2bc'] = 'État :';
+$_MODULE['<{gamification}prestashop>filters_bt_24a23d787190f2c4812ff9ab11847a72'] = 'État :';
 $_MODULE['<{gamification}prestashop>filters_bt_5364259abab90e94890f2ed2481b9824'] = 'Validé';
 $_MODULE['<{gamification}prestashop>filters_bt_dc450ba947e6adecbdbe68c25de03a1b'] = 'Non validé';
 $_MODULE['<{gamification}prestashop>filters_bt_07ad815187b53dc2ceaf5ad6e0a12bb1'] = 'Niveau :';
 $_MODULE['<{gamification}prestashop>filters_e659b52eba1f0299b2d8ca3483919e72'] = 'Type :';
 $_MODULE['<{gamification}prestashop>filters_b1c94ca2fbc3e78fc30069c8d0f01680'] = 'Toutes';
-$_MODULE['<{gamification}prestashop>filters_18325105de95083e4a1d10b78f29c2bc'] = 'État :';
+$_MODULE['<{gamification}prestashop>filters_24a23d787190f2c4812ff9ab11847a72'] = 'État :';
 $_MODULE['<{gamification}prestashop>filters_5364259abab90e94890f2ed2481b9824'] = 'Validé';
 $_MODULE['<{gamification}prestashop>filters_dc450ba947e6adecbdbe68c25de03a1b'] = 'Non validé';
 $_MODULE['<{gamification}prestashop>filters_07ad815187b53dc2ceaf5ad6e0a12bb1'] = 'Niveau :';

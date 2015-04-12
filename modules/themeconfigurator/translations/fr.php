@@ -18,7 +18,6 @@ $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_b9f5c797ebbf55adccdd8
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_f4f70727dc34561dfde1a3c529b6205c'] = 'Paramètres';
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_4351cfebe4b61d8aa5efa1d020710005'] = 'Afficher';
-$_MODULE['<{themeconfigurator}prestashop>themeconfigurator_058e1168dd26085fe8d317effdf70dc3'] = 'Vous seul pouvez voir cet outil sur votre front-office - vos visiteurs ne pourront pas le voir.';
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_6e3670bb5e3826106c5243b242cc52d9'] = 'Afficher les liens vers vos comptes de réseaux sociaux (Twitter, Facebook, etc.)';
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_1334ff714a38e8004e9cdc755baa5afb'] = 'Afficher les informations de contact de votre boutique';
 $_MODULE['<{themeconfigurator}prestashop>themeconfigurator_2f4fe84a25dc0024c9e80b4efd1d68f6'] = 'Afficher les boutons de partage vers les réseaux sociaux sur vos pages produits';

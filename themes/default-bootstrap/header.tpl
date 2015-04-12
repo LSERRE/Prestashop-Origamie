@@ -80,7 +80,7 @@
 								</a>
 							</div>
 
-							<div class="menu-container">
+							<div class="menu-container container">
 								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 							</div>
 						</div>						

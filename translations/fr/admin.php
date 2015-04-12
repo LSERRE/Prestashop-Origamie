@@ -4461,6 +4461,7 @@ $_LANGADM['AdminProducts166ee0d77c5fb0e92af1b7bc6c30aba0'] = 'Si certains produi
 $_LANGADM['AdminProducts20a722e0a7a1f2aed3924e23cb2a86cd'] = 'Notez que si un produit du pack a plusieurs déclinaisons, c\'est sa déclinaison par défaut qui sera utilisée pour les mouvements de stocks.';
 $_LANGADM['AdminProducts66de7ffcf9f515fb047045299ab0b3a3'] = 'Je veux utiliser la gestion des stocks avancée pour ce produit.';
 $_LANGADM['AdminProducts474eeb51bd9f6ed941bcde8129075838'] = 'L\'activation préalable de la gestion avancée du stock est requise.';
+$_LANGADM['AdminProducts11c8d4fb800577fcbd9e24ac7ba33d8b'] = 'Si vous activez la gestion des stocks avancée pour un pack, assurez-vous qu\'elle soit aussi activée pour les produits qui le composent, si vous choisissez de décrémenter les quantités des produits.';
 $_LANGADM['AdminProducts96ca47f429c269b85e31be9fb17df6d4'] = 'Quantités disponibles';
 $_LANGADM['AdminProducts4aeb39ce058edebf91ef47818c092420'] = 'Les quantités disponibles pour le produit actuel et ses déclinaisons sont basées sur le stock de votre entrepôt (par le biais du système de gestion des stocks avancée). ';
 $_LANGADM['AdminProducts9f34b413698f8638ee606edbafad7a23'] = 'L\'activation préalable de la gestion avancée du stock, globalement ou juste pour ce produit, est requise.';
