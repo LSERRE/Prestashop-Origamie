@@ -5580,6 +5580,16 @@ header {
 
 .menu-container {
   margin-top: 20px; }
+  .menu-container a {
+    font: 600 12px/32px gotham_mediumregular;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 5px;
+    color: #000000; }
+    .menu-container a:hover, .menu-container a.sfHover, .menu-container a.sfHover > a, .menu-container a.sfHoverForce > a {
+      background: #333;
+      border-bottom-color: #666666;
+      color: #ffffff !important; }
 
 #center_column .page_product_box h3 {
   color: #555454;

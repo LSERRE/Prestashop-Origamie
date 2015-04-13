@@ -7,7 +7,6 @@
   #header .shopping_cart > a:first-child {
     display: block;
     cursor: pointer;
-    font: 600 12px gotham_mediumregular;
     color: #000000;
     text-transform: uppercase; }
 
