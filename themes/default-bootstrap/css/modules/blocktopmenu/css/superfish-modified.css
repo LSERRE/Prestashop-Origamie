@@ -48,11 +48,11 @@
         .sf-menu > li span.active:after {
           content: "\f068"; } }
   .sf-menu > li > a {
-    font: 600 18px/22px "Open Sans", sans-serif;
+    font: 600 12px gotham_mediumregular;
+    color: #000000;
     text-transform: uppercase;
-    color: #484848;
     display: block;
-    margin-right: 15px; }
+    margin-right: 70px; }
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
     background: #333;

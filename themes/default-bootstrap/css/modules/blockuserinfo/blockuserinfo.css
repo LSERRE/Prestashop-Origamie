@@ -1,16 +1,11 @@
 .header_user_info {
-  float: left; }
+  float: left;
+  margin-right: 40px; }
   .header_user_info a {
-    color: #000;
-    font-weight: bold;
     display: block;
-    padding: 8px 9px 11px 8px;
     cursor: pointer;
-    line-height: 18px; }
-    @media (max-width: 479px) {
-      .header_user_info a {
-        font-size: 11px; } }
-    .header_user_info a:hover, .header_user_info a.active {
-      background: #2b2b2b; }
+    font: 600 12px gotham_mediumregular;
+    color: #000000;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=blockuserinfo.css.map */

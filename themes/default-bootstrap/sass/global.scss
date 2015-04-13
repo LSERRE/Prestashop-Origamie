@@ -7,6 +7,7 @@
 @import "bootstrap";
 @import "font-awesome/font-awesome";
 @import "icons";
+@import "fonts";
 
 a:hover {
 	text-decoration: none;
@@ -20,6 +21,7 @@ a:hover {
 }
 
 body {
+	background: url(../img/site-background.jpg);
 	min-width: 320px;
 	height: 100%;
 	line-height: 18px;
@@ -37,11 +39,7 @@ textarea {
 //structure
 #header {
 	z-index: 5003;
-}
-
-.columns-container {
-	background: $light-background;
-}
+}.header-container
 
 #columns {
 	position: relative;
@@ -59,7 +57,6 @@ textarea {
 header {
 	z-index: 1;
 	position: relative;
-	background: $light-background;
 	padding-bottom: 15px;
 	.banner {
 		background: black;
@@ -1686,10 +1683,6 @@ div.star a:hover {
 	display: block;
 	padding: 5px 0;
 	color: $base-text-color;
-}
-
-.header-container {
-	background: $light-background;
 }
 
 // BREADCRUMB
