@@ -5603,7 +5603,7 @@ header {
   position: relative;
   border: 1px solid #d6d4d4;
   border-bottom: none;
-  background: #fbfbfb; }
+  background: rgba(243, 243, 243, 0.6); }
 
 p.info-title {
   font-weight: bold;
@@ -6495,7 +6495,7 @@ h3.page-product-heading {
   position: relative;
   border: 1px solid #d6d4d4;
   border-bottom: none;
-  background: #fbfbfb; }
+  background: rgba(243, 243, 243, 0.6); }
 
 ul.footer_links {
   padding: 20px 0 0px 0;
@@ -6992,7 +6992,7 @@ div.star a:hover {
     text-indent: -5000px; }
   .breadcrumb a {
     display: inline-block;
-    background: #fff;
+    background: rgba(243, 243, 243, 0.6);
     padding: 0 15px 0 22px;
     margin-left: -26px;
     position: relative;
@@ -7027,7 +7027,7 @@ div.star a:hover {
       top: 3px;
       width: 18px;
       height: 18px;
-      background: #fff;
+      background: rgba(243, 243, 243, 0.6);
       border-right: 1px solid #d6d4d4;
       border-top: 1px solid #d6d4d4;
       border-radius: 2px;

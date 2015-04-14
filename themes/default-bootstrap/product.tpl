@@ -38,7 +38,6 @@
 	<div class="primary_block row">
 		{if !$content_only}
 			<div class="container">
-				<div class="top-hr"></div>
 			</div>
 		{/if}
 		{if isset($adminActionDisplay) && $adminActionDisplay}
@@ -60,11 +59,6 @@
 		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
-				{if $product->new}
-					<span class="new-box">
-						<span class="new-label">{l s='New'}</span>
-					</span>
-				{/if}
 				{if $product->on_sale}
 					<span class="sale-box no-print">
 						<span class="sale-label">{l s='Sale!'}</span>
@@ -80,9 +74,9 @@
 							</a>
 						{else}
 							<img id="bigpic" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
-							{if !$content_only}
+						<!-- 	{if !$content_only}
 								<span class="span_link no-print">{l s='View larger'}</span>
-							{/if}
+							{/if} -->
 						{/if}
 					</span>
 				{else}
@@ -151,12 +145,8 @@
 				<p class="online_only">{l s='Online only'}</p>
 			{/if}
 			<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
-			<p id="product_reference"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
-				<label>{l s='Reference:'} </label>
-				<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
-			</p>
 			{if !$product->is_virtual && $product->condition}
-			<p id="product_condition">
+<!-- 			<p id="product_condition">
 				<label>{l s='Condition:'} </label>
 				{if $product->condition == 'new'}
 					<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
@@ -169,7 +159,7 @@
 					<span class="editable">{l s='Refurbished'}</span>
 				{/if}
 			</p>
-			{/if}
+			{/if} -->
 			{if $product->description_short || $packItems|@count > 0}
 				<div id="short_description_block">
 					{if $product->description_short}
@@ -197,14 +187,18 @@
 					{/if}-->
 				</div> <!-- end short_description_block -->
 			{/if}
-			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
-				<!-- number of item in stock -->
+			<p id="product_reference"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
+				<label>{l s='Reference:'} </label>
+				<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
+			</p>
+<!-- 			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
+				number of item in stock
 				<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
 					<span id="quantityAvailable">{$product->quantity|intval}</span>
 					<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
 					<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span>
 				</p>
-			{/if}
+			{/if} -->
 			<!-- availability or doesntExist -->
 			<p id="availability_statut"{if !$PS_STOCK_MANAGEMENT || ($product->quantity <= 0 && !$product->available_later && $allow_oosp) || ($product->quantity > 0 && !$product->available_now) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 				{*<span id="availability_label">{l s='Availability:'}</span>*}
