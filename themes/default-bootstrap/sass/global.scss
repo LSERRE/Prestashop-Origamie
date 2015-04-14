@@ -1723,7 +1723,7 @@ div.star a:hover {
 	}
 	a {
 		display: inline-block;
-		background: $light-background;
+		background: rgba(243,243,243,0.6);
 		padding: 0 15px 0 22px;
 		margin-left: -26px;
 		position: relative;
@@ -1757,7 +1757,7 @@ div.star a:hover {
 			top: 3px;
 			width: 18px;
 			height: 18px;
-			background: $light-background;
+			background: rgba(243,243,243,0.6);
 			border-right: 1px solid $base-border-color;
 			border-top: 1px solid $base-border-color;
 			border-radius: 2px;
