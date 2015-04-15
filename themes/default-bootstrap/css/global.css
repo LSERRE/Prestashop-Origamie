@@ -2304,10 +2304,6 @@ input[type="button"].btn-block {
 .tabbable:after {
   clear: both; }
 
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none; }
-
 .tab-content > .active,
 .pill-content > .active {
   display: block; }
