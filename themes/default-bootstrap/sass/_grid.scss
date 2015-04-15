@@ -1,0 +1,23 @@
+
+$nbr-col : 16;
+$col-size : 40px;
+$col-gut : 20px;
+$container : 940px;
+
+
+
+.line { width:100%; overflow:hidden; clear:both; }
+.col_last { margin-right:0 !important; }
+.col_right { float:right; }
+.col_centered { margin:0 auto !important; }
+.col_16 { width:940px; margin-right:0; }
+
+@for $i from 1 through $nbr-col - 1 {
+ 
+    .col_#{$i} { 
+        width: $col-size * $i + (($i - 1 )* $col-gut);
+        margin-right:$col-gut; 
+        float:left;
+    }
+ 
+}
