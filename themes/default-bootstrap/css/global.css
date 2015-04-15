@@ -6171,6 +6171,33 @@ table.table_block td {
   .table tfoot tr {
     background: #fbfbfb; }
 
+.origami-title {
+  display: inline-block;
+  z-index: 500;
+  color: #3a3939;
+  line-height: 1;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'gotham_mediumregular';
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+  .origami-title::after {
+    content: '-rigami';
+    text-transform: uppercase;
+    font-family: 'gotham_bookregular'; }
+  .origami-title::before {
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20%;
+    bottom: -3px;
+    height: 10px;
+    width: 180px;
+    background: #e02e2e; }
+
 .product-name {
   font-size: 17px;
   line-height: 23px;

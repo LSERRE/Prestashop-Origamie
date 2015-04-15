@@ -38,7 +38,7 @@
 	{math equation="nbLi/nbItemsPerLine" nbLi=$nbLi nbItemsPerLine=$nbItemsPerLine assign=nbLines}
 	{math equation="nbLi/nbItemsPerLineTablet" nbLi=$nbLi nbItemsPerLineTablet=$nbItemsPerLineTablet assign=nbLinesTablet}
 	<!-- Products list -->
-	<ul{if isset($id) && $id} id="{$id}"{/if} class="product_list product_list_home grid {if isset($class) && $class} {$class}{/if}">
+	<ul{if isset($id) && $id} id="{$id}"{/if} class="product_list grid {if isset($class) && $class} {$class}{/if}">
 	{$i = 0}
 	{foreach from=$products item=product name=products}
 		{math equation="(total%perLine)" total=$smarty.foreach.products.total perLine=$nbItemsPerLine assign=totModulo}
