@@ -577,10 +577,14 @@ ul.product_list_home {
 					border: 0 !important;
 					padding: 0 !important;
 					margin: 0 !important;
+					transform: scale(.8);
+					transition: transform .3s ease-in-out;
 				}				
 			}
 			
 			.right-block {
+				opacity: 0;
+				transition: opacity .3s ease-in-out;
 				h5 {
 					position: relative;
 					font-size: 18px;
@@ -603,6 +607,21 @@ ul.product_list_home {
 				}
 			}
 
+		}
+
+		&.active,
+		&:hover {
+			.product-container {
+				.left-block {
+					.product-image-container {
+						transform: scale(1);
+					}
+				}
+
+				.right-block {
+					opacity: 1;
+				}
+			}
 		}
 	}
 }

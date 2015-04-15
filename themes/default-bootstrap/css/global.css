@@ -6223,7 +6223,7 @@ table.table_block td {
   white-space: nowrap; }
 
 .price.product-price {
-  font: 600 21px/26px "Open Sans", sans-serif;
+  font: 600 18px/26px "Open Sans", sans-serif;
   color: #333; }
 
 .old-price {
@@ -6231,15 +6231,15 @@ table.table_block td {
   text-decoration: line-through; }
 
 .old-price.product-price {
-  font-size: 17px; }
+  font-size: 16px; }
 
 .special-price {
   color: #f13340; }
 
 .price-percent-reduction {
-  background: #f13340;
+  background: #e02e2e;
   border: 1px solid #d02a2c;
-  font: 600 21px/24px "Open Sans", sans-serif;
+  font: 600 20px/24px "Open Sans", sans-serif;
   color: #fff;
   padding: 0 5px 0 3px;
   display: inline-block; }
