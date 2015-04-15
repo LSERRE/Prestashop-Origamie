@@ -1,6 +1,9 @@
 @import "compass";
 @import "theme_variables";
 
+
+
+
 /* product desc */
 /* primary_block ***************************************************************************** */
 .primary_block {
@@ -1203,3 +1206,60 @@ Quick View Styles
 		filter: none;
 	}
 }
+
+
+
+
+.page-product-desc {
+	font-family:"gotham_bookitalic"; 
+	line-height:1.3; 
+	font-size:12px; 
+	margin-bottom:15px; 
+	position:relative; 
+	margin-top:100px; 
+	&::before {
+		content:'';
+		width:1px; height:40px; 
+		position:absolute; 
+		left:50%; top:-75px; 
+		background:#e02e2e; 
+	}
+}
+
+.content_prices {
+	padding:0;
+	width:100%; height:50px; 
+	line-height:50px;
+	text-transform:uppercase;
+	border-top:1px solid #d0cecd;
+	border-bottom:1px solid #d0cecd;
+}
+
+.our_price_display {
+	float:left; 
+	font-family:"gotham_mediumregular";
+	color:#000;
+	font-size:12px;
+	line-height:50px;   	
+}
+
+#our_price_display {
+	color:#e02e2e;
+	font-family:"gotham_mediumregular";
+	font-size:18px; 
+	display:inline-block; 
+	margin:0 10px; 
+}
+
+#old_price {
+	font-family:"gotham_bookregular";
+	font-size:10px; 
+	text-transform:none; 
+	color:#000;
+	text-decoration:none;
+}
+#old_price .price{
+	font-size:10px; 
+	color:#000;
+}
+
