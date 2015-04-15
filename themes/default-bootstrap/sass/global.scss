@@ -31,6 +31,87 @@ body {
 	&.content_only {
 		background: none;
 	}
+	&.hideLoader {
+		.loader {
+			opacity: 0;
+		}
+	}
+}
+
+.loader {
+	opacity: 1;
+	z-index: 9999;
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/site-background.jpg), #EAE6DE;
+	@include transition(opacity 0.5s ease);
+	.intro {
+	  position: absolute;
+	  top: 0; bottom: 0;
+	  left: 0; right: 0;
+	  display: block;
+	  width: 350px;
+	  height: 250px;
+	  margin: auto;
+	}
+
+	#logo {
+	  opacity: 0;
+	  position: absolute;
+	  top: 0; bottom: 30%;
+	  left: 0; right: 0;
+	  display: block;
+	  width: 350px;
+	  height: 100px;
+	  margin: auto;
+	  @include transform(translateY(-10px));
+	  @include transition(transform 0.3s ease, opacity 0.2s ease);
+	  &.show {
+	    opacity: 1;
+	    @include transform(translateY(0px));
+	  }
+	  &::after {
+	    z-index: 500;
+	    content: '';
+	    display: block;
+	    height: 100px;
+	    width: 100px;
+	    background: red ;
+	  }
+	}
+
+	span {
+	  opacity: 0;
+	  color: #e02e2e;
+	  font-size: 20px;
+	  font-family: 'Montserrat', sans-serif;
+	  text-transform: uppercase;
+	  text-align: center;
+	  position: absolute;
+	  bottom: 25%;
+	  width: 100%;
+	  @include transform(translateY(10px));
+	  @include transition(transform 0.3s ease, opacity 0.2s ease);
+	  &:before {
+	    content: '';
+	    display: block;
+	    height: 1px;
+	    width: 190px;
+	    margin: 0 auto 20px;
+	    background: #353535;
+	    @include transform(scale(0));
+	    @include transition(0.2s transform 0.3s ease);
+	  }
+	  &.show {
+	    opacity: 1;
+	    @include transform(translateY(0px));
+	    &::before {
+	      @include transform(scale(1));
+	    }
+	  }
+	}
 }
 
 textarea {
@@ -549,32 +630,21 @@ span.exclusive {
 }
 
 .button.ajax_add_to_cart_button {
-	font: 700 17px / 21px $font-family;
-	color: $button-text-color;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'gotham_bookregular';
+	height: 35px;
+	width: 170px;
 	padding: 0;
-	border: 1px solid;
-	border-color: #0079b6 #006fa8 #012740 #006fa8;
-	span {
-		border: 1px solid;
-		border-color: #06b2e6;
-		padding: 10px 14px;
-		display: block;
-		background: rgb(0, 154, 208);
-		background: -moz-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 154, 208, 1)), color-stop(100%, rgba(0, 122, 183, 1)));
-		background: -webkit-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -o-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -ms-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: linear-gradient(to bottom, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ad0', endColorstr='#007ab7',GradientType=0);
-	}
+	margin: 0 auto;
+	background: #b7b3a6;
+	border-radius: 3px;
+	border: none;
+	@include box-shadow(2px 2px 0 rgba(0,0,0,0.3));
 	&:hover {
-		border-color: #01314e #004b74 #0079b6 #004b74;
-		span {
-			filter: none;
-			background: #0084bf;
-		}
+
 	}
 }
 
@@ -744,8 +814,8 @@ table.table_block td {
 }
 
 .price.product-price {
+	color: #dc2d2d;
 	font: 600 18px / 26px $font-custom;
-	color: $product-price-color;
 }
 
 .old-price {

@@ -191,7 +191,7 @@ function blockHover(status)
 		{
 			var pcHeight = $(this).parent().outerHeight();
 			var pcPHeight = $(this).parent().find('.button-container').outerHeight() + $(this).parent().find('.comments_note').outerHeight() + $(this).parent().find('.functional-buttons').outerHeight();
-			$(this).parent().addClass('hovered').css({'height':pcHeight + pcPHeight, 'margin-bottom':pcPHeight * (-1)});
+			// $(this).parent().addClass('hovered').css({'height':pcHeight + pcPHeight, 'margin-bottom':pcPHeight * (-1)});
 			$(this).find('.button-container').show();
 		}
 	});
@@ -199,7 +199,7 @@ function blockHover(status)
 	$(document).off('mouseleave').on('mouseleave', '.product_list.grid li.ajax_block_product .product-container', function(e){
 		if (screenLg)
 		{
-			$(this).parent().removeClass('hovered').css({'height':'auto', 'margin-bottom':'0'});
+			// $(this).parent().removeClass('hovered').css({'height':'auto', 'margin-bottom':'0'});
 			$(this).find('.button-container').hide();
 		}
 	});
