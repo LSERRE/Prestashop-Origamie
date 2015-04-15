@@ -13,23 +13,17 @@ ul.product_list {
 	}
 	.availability {
 		span {
-			display: inline-block;
-			color: $light-text-color;
-			font-weight: bold;
-			padding: 3px 8px 4px 8px;
-			margin-bottom: 20px;
-			&.available-now {
-				background: #55c65e;
-				border: 1px solid #36943e;
-			}
-			&.out-of-stock{
-				background: #fe9126;
-				border: 1px solid #e4752b;
-			}
-			&.available-dif{
-				background: #fe9126;
-				border: 1px solid #e4752b;
-			}
+			display: block;
+			color: #fff;
+			line-height: 30px;
+			text-transform: uppercase;
+			font-family: 'gotham_bookregular';
+			max-width: 120px;
+			height: 30px;
+			margin: 0 auto;
+			background: #b7b3a6;
+			border-radius: 3px;
+			@include box-shadow(2px 2px 0 rgba(0,0,0,0.3));
 		}
 	}
 	.color-list-container {
@@ -210,7 +204,15 @@ ul.product_list {
 /*******************************************************
 Product list(Grid) Styles
 ********************************************************/
-
+body.index {
+	ul.product_list.grid {
+		> li {
+			.product-container {
+				padding-bottom: 40px;
+			}
+		}
+	}
+}
 ul.product_list.grid {
 	> li {
 		padding-bottom: 20px;
@@ -220,13 +222,32 @@ ul.product_list.grid {
 			float: left;
 		}
 		.product-container {
-			background: $light-background;
 			padding: 0;
+			overflow: hidden;
 			position: relative;
-			.product-image-container {
-				border: 1px solid $base-listing-border-color;
-				padding: 9px;
-				margin-bottom: 13px;
+			z-index: 500;
+			padding-bottom: 10px;
+			&::before {
+				opacity: 0;
+				z-index: -1;
+				content: '';
+				position: absolute;
+				left: 0; top: 0;
+				right: 0; bottom: 0;
+				display: block;
+				height: calc(100% - 15px);
+				width: 100%;
+				background: rgba(243,243,243,0.6);
+				@include transform(translateX(-100px) translateY(-50px) skewX(-30deg));
+				@include transition(all 0.3s ease);
+			}
+			&:hover {
+				&::before {
+					opacity: 1;
+					@include transform(translate(0) skewX(0deg));
+				}
+			}
+			.product-image-container {	
 				position: relative;
 				@media (max-width: $screen-xs-max) { // max 767px
 					max-width: 290px;
@@ -234,15 +255,16 @@ ul.product_list.grid {
 					margin-right: auto;
 				}
 				.content_price {
+					color: #dc2d2d;
 					position: absolute;
 					left: 0;
-					bottom: -1px;
+					bottom: -2px;
 					width: 100%;
 					background: url(../img/price-container-bg.png);
 					padding: 9px 0;
 					display: none;
 					span {
-						color: $light-text-color;
+						color: #dc2d2d;
 						&.old-price {
 							color: #b1b0b0;
 						}
@@ -250,8 +272,23 @@ ul.product_list.grid {
 				}
 			}
 			h5 {
-				padding: 0 15px 7px 15px;
-				min-height: 53px;
+				position: relative;
+				line-height: 1;
+				font-size: 14px;
+				font-family: 'gotham_bookregular';
+				text-transform: uppercase;
+				margin: 0;
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0; right: 0;
+					top: -25px;
+					margin: auto;
+					display: block;
+					height: 1px;
+					width: 45px;
+					background: rgba(0,0,0,0.3);
+				}
 			}
 			.comments_note {
 				@media (min-width: $screen-lg) { // min 1200px
@@ -280,7 +317,9 @@ ul.product_list.grid {
 				margin-right: 5px;
 			}
 			.button-container {
-				margin-bottom: 14px;
+				position: absolute;
+				left: 0; right: 0;
+				margin: 0 auto;
 				.ajax_add_to_cart_button,
 				span.button,
 				.lnk_view {
@@ -303,7 +342,7 @@ ul.product_list.grid {
 		@media (min-width: $screen-lg) { // min 1200px
 			&.hovered {
 				.product-container {
-					@include box-shadow(rgba(black, 0.17) 0 0 13px);
+					// @include box-shadow(rgba(black, 0.17) 0 0 13px);
 					position: relative;
 					z-index: 10;
 					.content_price {
@@ -367,7 +406,6 @@ ul.product_list.grid {
 /*******************************************************
 Product list(List) Styles
 ********************************************************/
-
 ul.product_list.list {
 	> li {
 		.left-block {
@@ -381,7 +419,6 @@ ul.product_list.list {
 		}
 		.product-image-container {
 			position: relative;
-			border: 1px solid $base-listing-border-color;
 			padding: 9px;
 			@media (max-width: $screen-xs - 1) { // max 479px
 				max-width: 290px;
@@ -575,6 +612,9 @@ Product list(Index page) Styles
 
 			.product-container {
 				background: none !important;
+				&::before {
+					display: none !important;
+				}
 
 				.left-block {
 					.product-image-container {

@@ -630,32 +630,21 @@ span.exclusive {
 }
 
 .button.ajax_add_to_cart_button {
-	font: 700 17px / 21px $font-family;
-	color: $button-text-color;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'gotham_bookregular';
+	height: 35px;
+	width: 170px;
 	padding: 0;
-	border: 1px solid;
-	border-color: #0079b6 #006fa8 #012740 #006fa8;
-	span {
-		border: 1px solid;
-		border-color: #06b2e6;
-		padding: 10px 14px;
-		display: block;
-		background: rgb(0, 154, 208);
-		background: -moz-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 154, 208, 1)), color-stop(100%, rgba(0, 122, 183, 1)));
-		background: -webkit-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -o-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: -ms-linear-gradient(top, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		background: linear-gradient(to bottom, rgba(0, 154, 208, 1) 0%, rgba(0, 122, 183, 1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ad0', endColorstr='#007ab7',GradientType=0);
-	}
+	margin: 0 auto;
+	background: #b7b3a6;
+	border-radius: 3px;
+	border: none;
+	@include box-shadow(2px 2px 0 rgba(0,0,0,0.3));
 	&:hover {
-		border-color: #01314e #004b74 #0079b6 #004b74;
-		span {
-			filter: none;
-			background: #0084bf;
-		}
+
 	}
 }
 
@@ -825,8 +814,8 @@ table.table_block td {
 }
 
 .price.product-price {
+	color: #dc2d2d;
 	font: 600 18px / 26px $font-custom;
-	color: $product-price-color;
 }
 
 .old-price {
