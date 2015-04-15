@@ -69,24 +69,21 @@
 			</div>
 		{/if}
 		<div id="page">
-			<div class="header-container">
-				<header id="header">
-					<div class="container">
-						<div class="row">
-							<!-- User login -->
-							<div id="header_logo">
-								<a href="{if $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
-									<img class="logo img-responsive" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height}"{/if}/>
-								</a>
-							</div>
 
-							<div class="menu-container container">
-								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
-							</div>
-						</div>						
-					</div>
-				</header>
-			</div>
+			<!-- HEADER -->
+			<header id="header">
+				<!-- User login -->
+				<div id="header_logo">
+					<a href="{if $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
+						<img class="logo img-responsive" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height}"{/if}/>
+					</a>
+				</div>
+
+				<div class="menu-container">
+					{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
+				</div>
+			</header>
+
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
