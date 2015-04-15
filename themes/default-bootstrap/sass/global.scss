@@ -1808,6 +1808,7 @@ div.star a:hover {
 // BREADCRUMB
 .breadcrumb {
 	display: inline-block;
+	margin-top: 20px;
 	padding: 0 11px;
 	border: 1px solid $base-border-color;
 	font-weight: bold;
@@ -1898,6 +1899,25 @@ div.star a:hover {
 		}
 		.navigation-pipe {
 			width: 20px;
+		}
+	}
+}
+
+.blockpack {
+	float: left;
+	width: calc(50% - 10px);
+	height: 800px;
+	background: url("../img/bg-blocks.jpg");
+	margin-bottom: 50px;
+	text-align: center;
+
+	h3 {
+		display: inline-block;
+		&:before {
+			background: #b7b3a6;
+		}
+		&:after {
+			content: '-saison';
 		}
 	}
 }

@@ -39,35 +39,38 @@
 									Sub Categories Styles
 ************************************************************************************************ */
 #subcategories {
-  border-top: 1px solid #d6d4d4;
   padding: 15px 0 0px 0; }
   #subcategories p.subcategory-heading {
-    font-weight: bold;
-    color: #333;
-    margin: 0 0 15px 0; }
+    font-family: 'gothambookregular';
+    margin-left: 40px;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #dc2d2d; }
+    #subcategories p.subcategory-heading:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background: #000;
+      top: 7px;
+      left: -40px; }
   #subcategories ul {
-    margin: 0 0 0 -20px; }
+    margin: 25px 0 40px; }
     #subcategories ul li {
       float: left;
-      width: 145px;
-      margin: 0 0 13px 33px;
-      text-align: center;
-      height: 202px; }
-      #subcategories ul li .subcategory-image {
-        padding: 0 0 8px 0; }
-        #subcategories ul li .subcategory-image a {
-          display: block;
-          padding: 9px;
-          border: 1px solid #d6d4d4; }
-          #subcategories ul li .subcategory-image a img {
-            max-width: 100%;
-            vertical-align: top; }
+      margin-right: 10px;
+      text-align: center; }
       #subcategories ul li .subcategory-name {
-        font: 600 18px/22px "Open Sans", sans-serif;
-        color: #555454;
-        text-transform: uppercase; }
-        #subcategories ul li .subcategory-name:hover {
-          color: #515151; }
+        font-family: 'gothambookregular';
+        font: 600 14px/14px "Open Sans", sans-serif;
+        color: #000;
+        border: 1px dashed rgba(224, 46, 46, 0.6);
+        padding: 5px 8px; }
+        #subcategories ul li .subcategory-name:hover, #subcategories ul li .subcategory-name.active {
+          text-decoration: none;
+          background: rgba(255, 255, 255, 0.4);
+          border: 1px dashed #e02e2e; }
       #subcategories ul li .cat_desc {
         display: none; }
       #subcategories ul li:hover .subcategory-image a {

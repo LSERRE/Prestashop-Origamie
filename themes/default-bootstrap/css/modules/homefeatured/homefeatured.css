@@ -1,3 +1,15 @@
-
+.homefeatured {
+  margin: 0;
+  float: right;
+  width: calc(50% - 10px);
+  height: 385px;
+  background: url("../../../img/bg-blocks.jpg");
+  text-align: center; }
+  .homefeatured li {
+    width: 100%; }
+  .homefeatured h3 {
+    display: inline-block; }
+    .homefeatured h3:before {
+      background: #ffff00; }
 
 /*# sourceMappingURL=homefeatured.css.map */
