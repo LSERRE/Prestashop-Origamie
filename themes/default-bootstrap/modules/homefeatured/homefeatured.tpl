@@ -25,7 +25,7 @@
 <div class="homefeatured">
 	<h3 class="origami-title">Le plus beau</h3>
 	{if isset($products) && $products}
-		{include file="$tpl_dir./product-list.tpl" class='tab-pane' id='homefeatured'}
+		{include file="$tpl_dir./product-single-home.tpl" class='tab-pane' id='homefeatured'}
 	{else}
 	<ul id="homefeatured" class="tab-pane">
 		<li class="alert alert-info">{l s='No featured products at this time.' mod='homefeatured'}</li>

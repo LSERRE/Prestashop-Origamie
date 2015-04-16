@@ -213,6 +213,11 @@ body.index {
 		}
 	}
 }
+
+.compare-form {
+	display: none !important;
+}
+
 ul.product_list.grid {
 	> li {
 		padding-bottom: 20px;
@@ -290,6 +295,7 @@ ul.product_list.grid {
 					background: rgba(0,0,0,0.3);
 				}
 			}
+			}
 			.comments_note {
 				@media (min-width: $screen-lg) { // min 1200px
 					display: none;
@@ -302,7 +308,7 @@ ul.product_list.grid {
 				display: none;
 			}
 			.content_price {
-				padding-bottom: 9px;
+				padding-bottom: 15px;
 				line-height: 21px;
 			}
 			.old-price,
@@ -324,6 +330,13 @@ ul.product_list.grid {
 				span.button,
 				.lnk_view {
 					margin: 0 6px 10px 6px;
+				}
+			}
+			.product-container-no-hover {
+				&:hover {
+				&::before {
+					opacity: 0;
+					@include transform(translate(0) skewX(0deg));
 				}
 			}
 			.functional-buttons {
