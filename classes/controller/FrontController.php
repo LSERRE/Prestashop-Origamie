@@ -457,6 +457,7 @@ class FrontControllerCore extends Controller
 				'HOOK_TOP' => Hook::exec('displayTop'),
 				'HOOK_LEFT_COLUMN' => ($this->display_column_left ? Hook::exec('displayLeftColumn') : ''),
 				'HOOK_RIGHT_COLUMN' => ($this->display_column_right ? Hook::exec('displayRightColumn', array('cart' => $this->context->cart)) : ''),
+				'HOOK_CATEGORY' => Hook::exec('displayCategoryList')
 			));
 		}
 		else
@@ -488,7 +489,7 @@ class FrontControllerCore extends Controller
 			'HOOK_TOP' => Hook::exec('displayTop'),
 			'HOOK_LEFT_COLUMN' => ($this->display_column_left ? Hook::exec('displayLeftColumn') : ''),
 			'HOOK_RIGHT_COLUMN' => ($this->display_column_right ? Hook::exec('displayRightColumn', array('cart' => $this->context->cart)) : ''),
-			'HOOK_FOOTER' => Hook::exec('displayFooter')
+			'HOOK_FOOTER' => Hook::exec('displayFooter'),
 		));
 
 		$this->context->smarty->assign(array(
