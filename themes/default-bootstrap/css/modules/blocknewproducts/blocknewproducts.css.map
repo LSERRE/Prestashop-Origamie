@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,iBAAkB;EACjB,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,gBAAgB;EACvB,UAAU,EAAE,iCAAiC;EAC7C,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;EAElB,oBAAG;IACF,KAAK,EAAE,IAAI;EAGZ,oBAAG;IACF,OAAO,EAAE,YAAY;IAErB,2BAAS;MACR,UAAU,EAAE,OAAO",
+"sources": ["../../../sass/modules/blocknewproducts/blocknewproducts.scss"],
 "names": [],
 "file": "blocknewproducts.css"
 }

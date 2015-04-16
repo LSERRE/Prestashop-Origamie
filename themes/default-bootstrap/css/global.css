@@ -7173,6 +7173,7 @@ div.star a:hover {
 
 .breadcrumb {
   display: inline-block;
+  margin-top: 20px;
   padding: 0 11px;
   border: 1px solid #d6d4d4;
   font-weight: bold;
@@ -7262,6 +7263,20 @@ div.star a:hover {
     display: none; }
   .ie8 .breadcrumb .navigation-pipe {
     width: 20px; }
+
+.blockpack {
+  float: left;
+  width: calc(50% - 10px);
+  height: 800px;
+  background: url("../img/bg-blocks.jpg");
+  margin-bottom: 50px;
+  text-align: center; }
+  .blockpack h3 {
+    display: inline-block; }
+    .blockpack h3:before {
+      background: #b7b3a6; }
+    .blockpack h3:after {
+      content: '-saison'; }
 
 #footer {
   background: url("../img/bg-footer.jpg");

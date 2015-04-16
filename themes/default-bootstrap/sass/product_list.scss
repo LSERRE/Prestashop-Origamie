@@ -295,6 +295,7 @@ ul.product_list.grid {
 					background: rgba(0,0,0,0.3);
 				}
 			}
+			}
 			.comments_note {
 				@media (min-width: $screen-lg) { // min 1200px
 					display: none;
@@ -329,6 +330,13 @@ ul.product_list.grid {
 				span.button,
 				.lnk_view {
 					margin: 0 6px 10px 6px;
+				}
+			}
+			.product-container-no-hover {
+				&:hover {
+				&::before {
+					opacity: 0;
+					@include transform(translate(0) skewX(0deg));
 				}
 			}
 			.functional-buttons {
@@ -567,7 +575,6 @@ Product list(Index page) Styles
 			padding-bottom: 10px;
 			margin-bottom: 10px;
 			@media (min-width: $screen-lg) { // min 1200px
-				padding-bottom: 85px;
 				margin-bottom:0;
 			}
 			.availability {
