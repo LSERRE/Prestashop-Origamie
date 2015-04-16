@@ -1,0 +1,19 @@
+.homefeatured {
+	margin: 0;
+	float: right;
+	width: calc(50% - 10px);
+	height: 385px;
+	background: url("../../../img/bg-blocks.jpg");
+	text-align: center;
+
+	li {
+		width: 100%;
+	}
+
+	h3 {
+		display: inline-block;
+		&:before {
+			background: #ffff00;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.blocknewproducts {
+	margin: 0;
+	float: right;
+	height: 385px;
+	width: calc(50% - 10px);
+	background: url("../../../img/bg-blocks.jpg");
+	margin-bottom: 30px;
+	text-align: center;
+
+	li {
+		width: 100%;
+	}
+
+	h3 {
+		display: inline-block;
+
+		&:before {	
+			background: #fefcff;
+		}
+	}
+}
