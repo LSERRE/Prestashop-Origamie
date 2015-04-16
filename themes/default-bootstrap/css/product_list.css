@@ -249,7 +249,7 @@ ul.product_list.grid > li {
   ul.product_list.grid > li .product-desc {
     display: none; }
   ul.product_list.grid > li .content_price {
-    padding-bottom: 9px;
+    padding-bottom: 15px;
     line-height: 21px; }
   ul.product_list.grid > li .old-price,
   ul.product_list.grid > li .price,
