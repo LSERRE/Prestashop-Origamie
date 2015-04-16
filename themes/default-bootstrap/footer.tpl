@@ -21,6 +21,32 @@
 						</div>
 					</div>
 					<div class="col_16 col_centered">{$HOOK_FOOTER}</div>
+					<div class="col_16 col_centered">
+						<section class="footer-block col-xs-12 col-sm-2 col-md-offset-1">
+							<h4>Qui sommes-nous?</h4>
+							<ul class="toggle-footer">
+								<li class="item"><a href="http://origami.dev/content/2-mentions-legales" title="Mentions légales">Notre histoire</a></li>
+								<li class="item"><a href="http://origami.dev/content/3-conditions-utilisation" title="Conditions d&#039;utilisation">Le concept</a></li>
+								<li><a href="http://origami.dev/plan-site" title="sitemap">L'équipe</a></li>
+							</ul>
+						</section>
+						<section class="footer-block col-xs-12 col-sm-2 col-md-offset-1">
+							<h4>service client</h4>
+							<ul class="toggle-footer">
+								<li class="item"><a href="http://origami.dev/content/2-mentions-legales" title="Mentions légales">Livraison</a></li>
+								<li class="item"><a href="http://origami.dev/content/3-conditions-utilisation" title="Conditions d&#039;utilisation">Satisfait ou remboursé</a></li>
+								<li><a href="http://origami.dev/contact" title="sitemap">Nous contacter</a></li>
+							</ul>
+						</section>
+						<section class="footer-block col-xs-12 col-col-sm-2 col-md-offset-1">
+							<h4>Informations</h4>
+							<ul class="toggle-footer">
+								<li class="item"><a href="http://origami.dev/content/2-mentions-legales" title="Mentions légales">Mentions légales</a></li>
+								<li class="item"><a href="http://origami.dev/content/3-conditions-utilisation" title="Conditions d&#039;utilisation">Conditions d&#039;utilisation</a></li>
+								<li><a href="http://origami.dev/plan-site" title="sitemap">Plan du site</a></li>
+							</ul>
+						</section>
+					</div>
 				</footer>
 				<!-- #footer -->
 			{/if}
