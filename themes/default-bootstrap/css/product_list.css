@@ -163,6 +163,9 @@ Product list(Grid) Styles
 body.index ul.product_list.grid > li .product-container {
   padding-bottom: 40px; }
 
+.compare-form {
+  display: none !important; }
+
 ul.product_list.grid > li {
   padding-bottom: 20px;
   text-align: center; }
