@@ -1187,9 +1187,7 @@ Quick View Styles
 	}
 }
 
-#product_payment_logos, #attributes {
-	display: none !important;
-}
+
 /***** IE code ****/
 
 .ie8 {
@@ -1208,6 +1206,112 @@ Quick View Styles
 }
 
 
+#buy_block {
+	h1 {
+		margin-top:50px; 
+	}
+	.attribute_fieldset {
+	  float: left;
+	  margin-left: 100px;
+	}
+
+	.product_attributes {
+		border-top:1px dashed #e02e2e;
+
+		#quantity_wanted_p {
+			float:left;
+			label {
+				float:left;
+				width:auto;
+				font-family:"gotham_bookregular";
+				text-transform:uppercase; 
+				font-size:12px;    
+			} 
+			.product_quantity_down {
+				display:inline-block; 
+				width:25px; height:20px; 
+				background:#f8f8f5;
+				margin-left:10px; 
+				color:#e02e2e;
+				line-height:20px;
+				border:none;
+				text-shadow:none; 
+			}
+			.product_quantity_up {
+				display:inline-block; 
+				width:25px; height:20px; 
+				background:#f8f8f5;
+				color:#e02e2e;
+				line-height:20px;
+				border:none;
+				text-shadow:none; 
+			}
+			#quantity_wanted {
+				border:none;
+				background:none; 
+				text-align:center; 
+				width:30px;
+				height:20px; 
+				font-size:12px; 
+				line-height:20px; 
+				outline:none;
+			}
+		}
+	}
+	.attribute_fieldset {
+		float:left; 
+		label {
+			float:left;
+			width:auto;
+			font-family:"gotham_bookregular";
+			text-transform:uppercase; 
+			font-size:12px;     
+		}
+	}
+	.pb-left-column #image-block img {
+	  height: 100%;
+	  width:auto; 
+	}
+	#attributes .attribute_list {
+	  width: auto;
+	  float: left;
+	  display: inline-block;
+	  margin-top: -5px;
+	  margin-left: 23px;
+	}
+	.buttons_bottom_block {
+		padding:0; 
+	}
+	#add_to_cart {
+		padding:0; 
+	}
+	.box-cart-bottom {
+		float:right;  
+		  margin-top: -11px;
+	}
+	.product_attributes {
+		padding-top:36px; 
+	}
+}
+
+.box-cart-bottom button {
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'gotham_bookregular';
+	height: 35px;
+	width: 170px;
+	padding: 0;
+	margin: 0 auto;
+	background: #b7b3a6;
+	border-radius: 3px;
+	border: none;
+	@include box-shadow(2px 2px 0 rgba(0,0,0,0.3));
+	&:hover {
+
+	}
+}
 
 
 .page-product-desc {

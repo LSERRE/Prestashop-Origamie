@@ -67,24 +67,6 @@
 
 				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 
-				{if $product->description_short || $packItems|@count > 0}
-					<div id="short_description_block">
-						{if $product->description_short}
-							<div id="short_description_content" class="rte align_justify" itemprop="description">{$product->description_short}</div>
-						{/if}
-
-						{if $product->description}
-							<p class="buttons_bottom_block">
-								<a href="javascript:{ldelim}{rdelim}" class="button">
-									{l s='More details'}
-								</a>
-							</p>
-						{/if}
-
-					</div> <!-- end short_description_block -->
-				{/if}
-
-
 
 				<!-- Out of stock hook -->
 				<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
@@ -99,7 +81,6 @@
 					</ul>
 				{/if}
 
-			
 				<!-- hidden datas -->
 				<p class="hidden">
 					<input type="hidden" name="token" value="{$static_token}" />
@@ -168,26 +149,37 @@
 						<div class="clear"></div>
 					</div> <!-- end content_prices -->
 
+					
+				</div> <!-- end box-info-product -->
+
+				{/if}
+			</div> <!-- end pb-right-column-->
+
+			<div class="clearfix"></div>
+			
+
+
+			<div class="col-sm-10 col-md-offset-1">
+				
 					<div class="product_attributes clearfix">
 
 						<!-- quantity wanted -->
 						{if !$PS_CATALOG_MODE}
 							<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 								<label>Quantité /</label>
-								<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down"><span><i class="icon-minus"></i></span></a>
+								<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">-</a>
 								<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
-								<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up"><span><i class="icon-plus"></i></span></a>
+								<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up">+</a>
 							</p>
 						{/if}
 
 						{if isset($groups)}
 							<!-- attributes -->
 							<div id="attributes">
-								<div class="clearfix"></div>
 								{foreach from=$groups key=id_attribute_group item=group}
 									{if $group.attributes|@count}
 										<fieldset class="attribute_fieldset">
-											<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
+											<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;/</label>
 											{assign var="groupName" value="group_$id_attribute_group"}
 											<div class="attribute_list">
 												{if ($group.group_type == 'select')}
@@ -230,22 +222,18 @@
 								{/foreach}
 							</div> <!-- end attributes -->
 						{/if}
+						<div class="box-cart-bottom">
+							<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
+								<p id="add_to_cart" class="buttons_bottom_block no-print">
+									<button type="submit" name="Submit" class="exclusive">
+										<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>
+									</button>
+								</p>
+							</div>
+							{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
+						</div> <!-- end box-cart-bottom -->
 					</div> <!-- end product_attributes -->
-
-					<div class="box-cart-bottom">
-						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
-							<p id="add_to_cart" class="buttons_bottom_block no-print">
-								<button type="submit" name="Submit" class="exclusive">
-									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>
-								</button>
-							</p>
-						</div>
-						{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
-					</div> <!-- end box-cart-bottom -->
-				</div> <!-- end box-info-product -->
-
-				{/if}
-			</div> <!-- end pb-right-column-->
+			</div>
 		</form>
 	</div> <!-- end primary_block -->
 

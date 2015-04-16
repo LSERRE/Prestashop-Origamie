@@ -1029,12 +1029,96 @@ Quick View Styles
     #product.content_only section.primary_block div.pb-right-column .box-info-product {
       border-top-width: 1px;
       min-height: 1px; } }
-#product_payment_logos, #attributes {
-  display: none !important; }
-
 /***** IE code ****/
 .ie8 .box-security {
   filter: none; }
+
+#buy_block h1 {
+  margin-top: 50px; }
+#buy_block .attribute_fieldset {
+  float: left;
+  margin-left: 100px; }
+#buy_block .product_attributes {
+  border-top: 1px dashed #e02e2e; }
+  #buy_block .product_attributes #quantity_wanted_p {
+    float: left; }
+    #buy_block .product_attributes #quantity_wanted_p label {
+      float: left;
+      width: auto;
+      font-family: "gotham_bookregular";
+      text-transform: uppercase;
+      font-size: 12px; }
+    #buy_block .product_attributes #quantity_wanted_p .product_quantity_down {
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      background: #f8f8f5;
+      margin-left: 10px;
+      color: #e02e2e;
+      line-height: 20px;
+      border: none;
+      text-shadow: none; }
+    #buy_block .product_attributes #quantity_wanted_p .product_quantity_up {
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      background: #f8f8f5;
+      color: #e02e2e;
+      line-height: 20px;
+      border: none;
+      text-shadow: none; }
+    #buy_block .product_attributes #quantity_wanted_p #quantity_wanted {
+      border: none;
+      background: none;
+      text-align: center;
+      width: 30px;
+      height: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      outline: none; }
+#buy_block .attribute_fieldset {
+  float: left; }
+  #buy_block .attribute_fieldset label {
+    float: left;
+    width: auto;
+    font-family: "gotham_bookregular";
+    text-transform: uppercase;
+    font-size: 12px; }
+#buy_block .pb-left-column #image-block img {
+  height: 100%;
+  width: auto; }
+#buy_block #attributes .attribute_list {
+  width: auto;
+  float: left;
+  display: inline-block;
+  margin-top: -5px;
+  margin-left: 23px; }
+#buy_block .buttons_bottom_block {
+  padding: 0; }
+#buy_block #add_to_cart {
+  padding: 0; }
+#buy_block .box-cart-bottom {
+  float: right;
+  margin-top: -11px; }
+#buy_block .product_attributes {
+  padding-top: 36px; }
+
+.box-cart-bottom button {
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'gotham_bookregular';
+  height: 35px;
+  width: 170px;
+  padding: 0;
+  margin: 0 auto;
+  background: #b7b3a6;
+  border-radius: 3px;
+  border: none;
+  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); }
 
 .page-product-desc {
   font-family: "gotham_bookitalic";
