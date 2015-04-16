@@ -114,7 +114,7 @@
 							<span class="availability">
 								{if ($product.allow_oosp || $product.quantity > 0)}
 									<span class="{if $product.quantity <= 0 && !$product.allow_oosp}out-of-stock{else}available-now{/if}">
-										{if $product.quantity <= 0}{if $product.allow_oosp}{if isset($product.available_later) && $product.available_later}{$product.available_later}{else}{l s='Disponible'}{/if}{else}{l s='Indisponible'}{/if}{else}{if isset($product.available_now) && $product.available_now}{$product.available_now}{else}{l s='Disponible'}{/if}{/if}
+										{if $product.quantity <= 0}{if $product.allow_oosp}{if isset($product.available_later) && $product.available_later}{$product.available_later}{else}{l s='Détails'}{/if}{else}{l s='Indisponible'}{/if}{else}{if isset($product.available_now) && $product.available_now}{$product.available_now}{else}{l s='Détails'}{/if}{/if}
 									</span>
 								{elseif (isset($product.quantity_all_versions) && $product.quantity_all_versions > 0)}
 									<span class="available-dif">
