@@ -35,28 +35,54 @@
 
 			<!-- left infos-->
 			<div class="pb-left-column col-xs-12 col-sm-4 col-md-6 col-md-offset-1">
+
 				<!-- product img-->
-				<div id="image-block" class="clearfix">
-					{if $product->on_sale}
-						<span class="sale-box no-print">
-							<span class="sale-label">{l s='Sale!'}</span>
-						</span>
-					{elseif $product->specificPrice && $product->specificPrice.reduction && $productPriceWithoutReduction > $productPrice}
-						<span class="discount">{l s='Reduced price!'}</span>
-					{/if}
+			<div id="image-block" class="clearfix">
+
+				{if $have_image}
 					<span id="view_full_size">
 						{if $jqZoomEnabled && $have_image && !$content_only}
-							<a class="jqzoom" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" rel="gal1" href="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')|escape:'html':'UTF-8'}" itemprop="url">
+							<a class="jqzoom" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" rel="gal1" href="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')|escape:'html':'UTF-8'}">
 								<img itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 							</a>
 						{else}
 							<img id="bigpic" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
-						<!-- 	{if !$content_only}
-								<span class="span_link no-print">{l s='View larger'}</span>
-							{/if} -->
 						{/if}
 					</span>
-				</div> <!-- end image-block -->	
+				{else}
+					<span id="view_full_size">
+						<img itemprop="image" src="{$img_prod_dir}{$lang_iso}-default-large_default.jpg" id="bigpic" alt="" title="{$product->name|escape:'html':'UTF-8'}" width="{$largeSize.width}" height="{$largeSize.height}"/>
+					</span>
+				{/if}
+			</div> <!-- end image-block -->
+			{if isset($images) && count($images) > 0}
+				<!-- thumbnails -->
+				<div id="views_block" style="display:none" class="clearfix {if isset($images) && count($images) < 2}hidden{/if}">
+
+					<div id="thumbs_list">
+						<ul id="thumbs_list_frame">
+						{if isset($images)}
+							{foreach from=$images item=image name=thumbnails}
+								{assign var=imageIds value="`$product->id`-`$image.id_image`"}
+								{if !empty($image.legend)}
+									{assign var=imageTitle value=$image.legend|escape:'html':'UTF-8'}
+								{else}
+									{assign var=imageTitle value=$product->name|escape:'html':'UTF-8'}
+								{/if}
+								<li id="thumbnail_{$image.id_image}"{if $smarty.foreach.thumbnails.last} class="last"{/if}>
+									<a{if $jqZoomEnabled && $have_image && !$content_only} href="javascript:void(0);" rel="{literal}{{/literal}gallery: 'gal1', smallimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}',largeimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}'{literal}}{/literal}"{else} href="{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}"	data-fancybox-group="other-views" class="fancybox{if $image.id_image == $cover.id_image} shown{/if}"{/if} title="{$imageTitle}">
+										<img class="img-responsive" id="thumb_{$image.id_image}" src="{$link->getImageLink($product->link_rewrite, $imageIds, 'cart_default')|escape:'html':'UTF-8'}" alt="{$imageTitle}" title="{$imageTitle}"{if isset($cartSize)} height="{$cartSize.height}" width="{$cartSize.width}"{/if} itemprop="image" />
+									</a>
+								</li>
+							{/foreach}
+						{/if}
+						</ul>
+					</div> <!-- end thumbs_list -->
+				</div> <!-- end views-block -->
+				<!-- end thumbnails -->
+			{/if}
+
+
 			</div> <!-- end pb-left-column -->
 			<!-- end left infos-->
 
