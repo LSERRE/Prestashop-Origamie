@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,UAAW;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,iCAAiC",
+"sources": ["../../../sass/modules/blockpack/blockpack.scss"],
 "names": [],
 "file": "blockpack.css"
 }

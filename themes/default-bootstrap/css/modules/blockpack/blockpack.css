@@ -1,3 +1,6 @@
-
+.blockpack {
+  float: left;
+  height: 600px;
+  background: url("../../../img/bg-blocks.jpg"); }
 
 /*# sourceMappingURL=blockpack.css.map */

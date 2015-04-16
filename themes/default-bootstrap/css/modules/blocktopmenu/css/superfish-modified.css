@@ -54,7 +54,8 @@
 .sf-menu > li ul {
   position: absolute;
   top: 31px;
-  left: 0; }
+  left: 0;
+  opacity: 0; }
   .sf-menu > li ul li {
     width: auto;
     float: left;
