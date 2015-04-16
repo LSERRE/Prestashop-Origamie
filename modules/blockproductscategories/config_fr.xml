@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>blockproductscategories</name>
+	<displayName><![CDATA[Module Products Categories]]></displayName>
+	<version><![CDATA[1]]></version>
+	<description><![CDATA[Display Products Categories]]></description>
+	<author><![CDATA[Louis Serre]]></author>
+	<tab><![CDATA[Products]]></tab>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

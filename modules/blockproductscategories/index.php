@@ -1,5 +1,6 @@
-{*
-* 2007-2015 PrestaShop
+<?php
+/*
+* 2007-2014 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,24 +19,17 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2015 PrestaShop SA
+*  @copyright  2007-2014 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*}
-{$HOOK_CATEGORY}
-{include file="$tpl_dir./errors.tpl"}
-{if isset($category)}
-	{if $category->id AND $category->active}
-		{if $products}
-			{include file="./product-list.tpl" products=$products}
-			<div class="content_sortPagiBar">
-				<div class="bottom-pagination-content clearfix">
-					{include file="./product-compare.tpl" paginationId='bottom'}
-                    {include file="./pagination.tpl" paginationId='bottom'}
-				</div>
-			</div>
-		{/if}
-	{elseif $category->id}
-		<p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>
-	{/if}
-{/if}
+*/
+
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT');
+
+header('Cache-Control: no-store, no-cache, must-revalidate');
+header('Cache-Control: post-check=0, pre-check=0', false);
+header('Pragma: no-cache');
+
+header('Location: ../');
+exit;
