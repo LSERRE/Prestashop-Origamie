@@ -5,20 +5,31 @@ ul.product_list .product-name {
   display: inline-block;
   width: 100%;
   overflow: hidden; }
-ul.product_list .availability span {
+ul.product_list .available-now {
+  visibility: hidden !important; }
+ul.product_list .availability a, ul.product_list .button-container a {
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  border: none;
+  background: none; }
+  ul.product_list .availability a span, ul.product_list .button-container a span {
+    -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); }
+ul.product_list .availability span, ul.product_list .button-container span {
   display: block;
   color: #fff;
   line-height: 30px;
   text-transform: uppercase;
   font-family: 'gotham_bookregular';
-  max-width: 120px;
+  width: 160px;
   height: 30px;
   margin: 0 auto;
   background: #b7b3a6;
-  border-radius: 3px;
-  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); }
+  border-radius: 3px; }
 ul.product_list .color-list-container {
   margin-bottom: 12px; }
   ul.product_list .color-list-container ul li {
