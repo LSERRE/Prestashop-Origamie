@@ -7249,6 +7249,7 @@ div.star a:hover {
     width: 20px; }
 
 .blockpack {
+  position: relative;
   float: left;
   width: calc(50% - 10px);
   height: 830px;
@@ -7261,6 +7262,39 @@ div.star a:hover {
       background: #b7b3a6; }
     .blockpack h3:after {
       content: '-saison'; }
+  .blockpack h4 {
+    color: #e02e2e;
+    font-family: "gotham_bookregular";
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .blockpack h4:before {
+      content: "Le Pack ";
+      font-family: "gotham_bookregular";
+      font-weight: 300;
+      color: #222;
+      margin-right: 5px; }
+  .blockpack li .product_img_link {
+    position: relative;
+    display: block; }
+    .blockpack li .product_img_link:after {
+      content: " ";
+      position: absolute;
+      bottom: 0px;
+      width: 150px;
+      height: 1px;
+      display: block;
+      background: #222;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .blockpack li img {
+    position: relative;
+    margin: 0 auto;
+    height: 230px; }
+  .blockpack li:last-child .product_img_link:after {
+    display: none; }
 
 #footer {
   background: url("../img/bg-footer.jpg");
@@ -7342,7 +7376,8 @@ div.star a:hover {
       float: left; }
   #footer .footer-block {
     width: 200px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    float: left; }
     #footer .footer-block h4 {
       text-transform: uppercase;
       color: #000;

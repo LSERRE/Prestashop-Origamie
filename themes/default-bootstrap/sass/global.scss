@@ -1887,6 +1887,7 @@ div.star a:hover {
 }
 
 .blockpack {
+	position: relative;
 	float: left;
 	width: calc(50% - 10px);
 	height: 830px;
@@ -1902,6 +1903,54 @@ div.star a:hover {
 		&:after {
 			content: '-saison';
 		}
+
+	}
+
+	h4 {
+		color: #e02e2e;
+		font-family:"gotham_bookregular";
+		font-weight: 600;
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+
+		&:before {
+			content: "Le Pack ";
+			font-family:"gotham_bookregular";
+			font-weight: 300;
+			color: #222;
+			margin-right: 5px;
+		}
+	}
+
+	li {
+		.product_img_link{
+			position: relative;
+			display: block;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				bottom: 0px;
+				width: 150px;
+				height: 1px;
+				display: block;
+				background: #222;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+
+		img {
+			position: relative;
+			margin: 0 auto;
+			height: 230px;
+		}
+
+		&:last-child .product_img_link:after {
+			display: none;
+		}		
 	}
 }
 
